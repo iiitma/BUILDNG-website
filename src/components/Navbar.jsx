@@ -55,7 +55,7 @@ export default function Navbar({ location }) {
         <Popover className="md:hidden">
           {({ open }) => (
             <>
-              <Popover.Button alt="Menu button"
+              <Popover.Button aria-label="Open or Close Menu"
                 className={`
                 group inline-flex items-center appearance-none focus:outline-none focus-visible:ring-0 `}
               >
@@ -85,6 +85,7 @@ export default function Navbar({ location }) {
                     <div className="relative grid gap-4 bg-white p-7 ">
                       {routes.map((route) => (
                         <NavbarItemLink
+                        key={route.label}
                           item={route}
                           currentRoute={location.pathname}
                           type="mobile"

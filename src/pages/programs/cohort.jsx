@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import ContactCard from "../../components/ContactCard";
 import Cohort from "../../components/Cohort";
-import CohortImage from "../../assets/png/cohort.png"
+import CohortImage from "../../assets/webp/cohort.webp"
 
 const Requirements = () => {
   return (

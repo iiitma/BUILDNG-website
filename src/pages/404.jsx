@@ -12,7 +12,7 @@ const Hero = () => {
             <p className="text-lg mb-8">The page you're looking for does not exist.</p>
             <div className="flex justify-center">
           <Link to="/" >
-          <button alt="Return to Home" className="btn bg-primary text-white mx-auto lg:mx-0">
+          <button aria-label="Return to Home" className="btn bg-primary text-white mx-auto lg:mx-0">
           <TiArrowBack size="20" /> <span>Return to Home</span> 
           </button>
           </Link>
