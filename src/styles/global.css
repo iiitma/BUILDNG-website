@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import 'swiper/css';
+@import "swiper/css/effect-cards";
+@import "swiper/css/pagination";
+
+@font-face {
+    font-family: PPRadioGrotesk;
+    src: url('../assets/fonts/PPRadioGrotesk-Regular.woff2');
+  }
+
+@layer base {
+    html {
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 14px;
+    }
+  }
+
+@layer components {
+   .nav-btn {
+       @apply rounded-md px-6 py-2 hover:-translate-y-1 hover:bg-opacity-75 ease-linear duration-300 flex space-x-2 items-center font-semibold text-sm cursor-pointer whitespace-nowrap text-center
+   }
+
+   section {
+       @apply px-8 max-w-[1280px] mb-20
+   }
+
+   section#hero {
+    @apply pt-24
+   }
+
+   .btn {
+    @apply rounded-md px-6 py-2 hover:-translate-y-1 hover:bg-opacity-75 ease-linear duration-300 flex space-x-2 items-center font-semibold  cursor-pointer whitespace-nowrap text-center
+   }
+
+   .btn-lg {
+       @apply px-12 py-5
+   }
+
+   .icon-circle {
+       @apply rounded-xl bg-opacity-20  flex justify-center items-center !important
+   }
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets {
+  bottom:0px !important
+}
