@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { ContactCard } from "../../components/ContactCard";
-import SRPMImage from "../../assets/png/srpm.png";
-import SRPMPoster from "../../assets/png/srpm-poster.png";
+import SRPMImage from "../../assets/webp/srpm.webp";
+import SRPMPoster from "../../assets/webp/srpm-poster.webp";
+import { StaticImage } from "gatsby-plugin-image"
 
 const SrpmHero = () => {
   return (
@@ -22,7 +23,7 @@ const SrpmHero = () => {
           </p>
           <div className="flex gap-4">
             {/* <Link to="/contact-us">
-              <button alt="Apply Now" className="btn bg-primary btn-lg text-white">
+              <button aria-label="Apply Now" className="btn bg-primary btn-lg text-white">
                 <span>Apply Now</span>
               </button>
             </Link> */}
@@ -35,7 +36,7 @@ const SrpmHero = () => {
           </div>
         </div>
         <div className="md:w-1/2 max-w-lg">
-          <img src={SRPMImage} alt="" />
+          <StaticImage src="../../assets/webp/srpm.webp" width={448} height={448} alt="" />
         </div>
       </div>
     </section>

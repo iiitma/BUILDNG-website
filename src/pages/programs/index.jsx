@@ -2,10 +2,10 @@ import React from "react";
 import Layout from "../../components/Layout";
 import ContactCard from "../../components/ContactCard";
 import { Link } from "gatsby";
-import SRPMImage from "../../assets/png/srpm.png";
 import { HiOutlineChevronRight, HiOutlineClock, HiPlus } from "react-icons/hi";
 import { SiLinkedin } from 'react-icons/si';
 import Cohort from "../../components/Cohort";
+import { StaticImage } from "gatsby-plugin-image"
 
 const Others = () => {
   return (
@@ -21,14 +21,14 @@ const Others = () => {
         </p>
         <div className="flex">
         <Link to="/programs/srpm" >
-          <button alt="Learn More" className="btn bg-primary text-white">
-          <span>Learn More</span> <HiOutlineChevronRight size="20" />
+          <button aria-label="Learn More about SRPM" className="btn bg-primary text-white">
+          <span>Learn More about SRPM</span> <HiOutlineChevronRight size="20" />
           </button>
         </Link>
         </div>
       </div>
       <div className="md:w-1/2 max-w-lg">
-        <img src={SRPMImage} alt="" />
+        <StaticImage src="../../assets/webp/srpm.webp" width="325.5" height="325.5" alt="" />
       </div>
     </div>
 
@@ -41,7 +41,7 @@ const Others = () => {
         <p className="mb-6">
         BUILD Nigeria plans to develop and maintain a think tank that seeks to create and encourage conversations surrounding the radical rethinking and reimagining of the Nigerian education landscape.
         </p>
-          <button alt="Coming Soon" className="btn bg-secondary text-primary rounded-full">
+          <button aria-label="Coming Soon" className="btn bg-secondary text-primary rounded-full">
           <HiOutlineClock size="20" /> <span>Coming Soon</span>
           </button>
       </div>
@@ -55,7 +55,7 @@ const Others = () => {
         <p className="mb-6">
         BUILD Nigeria plans to maintain an accessible, comprehensive and reliable online resource bank that will be available to members of the general public.
         </p>
-          <button alt="Coming Soon" className="btn bg-secondary text-primary rounded-full">
+          <button aria-label="Coming Soon" className="btn bg-secondary text-primary rounded-full">
           <HiOutlineClock size="20" /> <span>Coming Soon</span>
           </button>
       </div>
@@ -70,8 +70,8 @@ const Others = () => {
        Don't miss any update on our programs. Follow us on LinkedIn and be the first to get information about our programs.
         </p>
         <div className="flex">
-        <Link alt="Follow Us on LinkedIn" to="https://www.linkedin.com/company/build-nigeria/" target="_blank" >
-          <button alt="Follow Us on LinkedIn" className="btn bg-white text-sky-600">
+        <Link aria-label="Follow Us on LinkedIn" to="https://www.linkedin.com/company/build-nigeria/" target="_blank" >
+          <button aria-label="Follow Us on LinkedIn" className="btn bg-white text-sky-600">
           <span>Follow Us</span> <HiPlus size="20" />
           </button>
         </Link>

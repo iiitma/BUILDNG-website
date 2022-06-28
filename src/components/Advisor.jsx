@@ -20,9 +20,11 @@ export const Person = ({details}) => {
         <div className="items-center flex justify-center relative">
           <div className="h-40 w-44 group-hover:border border-transparent group-hover:border-t-alt group-hover:bg-alt aspcet-1 rounded-full animate-spin absolute"></div>
           <img
+          height="140"
+          width="140"
           alt={details.name}
             className="rounded-full object-cover aspect-1 h-40 z-10"
-            src={details.image.url}
+            src={details.image.url.replace('/image/upload', '/image/upload/w_300,f_auto').replace('.jpg', '.webp')}
           />
         </div>
         <h2 className="mt-2 text-xl font-serif">{details.name}</h2>
@@ -55,7 +57,7 @@ export const Person = ({details}) => {
                 <Dialog.Panel className="w-full max-w-xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <div className="absolute right-4">
                     <button
-                    alt="closeModal"
+                    aria-label="Close Modal"
                       type="button"
                       className="inline-flex justify-center border border-transparent bg-secondary p-2 rounded-full text-sm font-medium text-primary hover:bg-primary/50 "
                       onClick={closeModal}

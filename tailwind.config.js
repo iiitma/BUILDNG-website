@@ -11,8 +11,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Manrope', 'sans-serif'],
-      'rc': ['Radio Canada', 'sans-serif'],
-      'serif': ['PPRadioGrotesk', 'serif']
+      'serif': ['PPRadioGrotesk', 'ui-serif', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif']
 
     },
     extend: {
@@ -25,8 +24,8 @@ module.exports = {
       },
       backgroundImage: {
         'world-svg': "url('../assets/svgs/world-bg.svg')",
-        'education': "url('../assets/png/education.png')",
-        'geo': "url('../assets/png/geo.png')",
+        'education': "url('../assets/webp/education.webp')",
+        'geo': "url('../assets/webp/geo.webp')",
       }
     },
   },

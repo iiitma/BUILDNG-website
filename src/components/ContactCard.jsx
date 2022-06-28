@@ -2,6 +2,7 @@ import React from 'react';
 import ContactUs from "../assets/svgs/contact-us.svg";
 import { HiOutlineChevronRight } from "react-icons/hi";
 import { Link } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
 
 export const ContactCard = () => {
     return (
@@ -15,7 +16,7 @@ export const ContactCard = () => {
               Send us a message at{" "}
               <a
                 href="mailto:info@buildng.org"
-                className="text-primary font-semibold"
+                className="text-alt font-semibold"
               >
                 info@buildng.org
               </a>{" "}
@@ -23,13 +24,13 @@ export const ContactCard = () => {
               always available to answer your questions.
             </p>
             <Link to="/contact-us" >
-              <button alt="Contact Us" className="btn bg-primary btn-lg text-white">
+              <button aria-label="Contact Us" className="btn bg-primary btn-lg text-white">
               <span>Contact Us</span> <HiOutlineChevronRight size="20" />
               </button>
             </Link>
           </div>
           <div className="md:w-1/2 max-w-lg">
-            <img src={ContactUs} alt="" />
+            <StaticImage src="../assets/svgs/contact-us.svg" alt="Contact Us Illustration"  width="640" />
           </div>
         </div>
       </section>

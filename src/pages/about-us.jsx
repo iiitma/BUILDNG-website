@@ -29,14 +29,14 @@ const Hero = () => {
             to US colleges.
           </p>
           <Link to="/donate">
-          <button alt="Donate Now" className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
+          <button aria-label="Donate Now" className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
             <span>Donate Now</span> <HiOutlineChevronRight size="20" />
           </button>
           </Link>
         </div>
         <div className="lg:w-1/2 w-full max-w-md">
-          <img
-            src="https://images.unsplash.com/photo-1577036421869-7c8d388d2123?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+          <img  width="720"
+            src="https://images.unsplash.com/photo-1577036421869-7c8d388d2123?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80"
             alt="BUILD Nigeria - Who we are"
             className="object-center object-cover w-100 rounded-xl aspect-1"
           />

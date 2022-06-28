@@ -12,7 +12,7 @@ const Hero = () => {
             <p className="text-lg mb-8">Something really cool is coming...</p>
             <div className="flex justify-center">
           <Link to="/" >
-          <button className="btn bg-primary text-white mx-auto lg:mx-0">
+          <button aria-label="Return Home" className="btn bg-primary text-white mx-auto lg:mx-0">
           <TiArrowBack size="20" /> <span>Return to Home</span> 
           </button>
           </Link>
