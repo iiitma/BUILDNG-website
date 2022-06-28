@@ -8,6 +8,7 @@ module.exports = {
     image: "/images/icon.png", // Path to the image placed in the 'static' folder, in the project's root directory.
     twitterUsername: ""
   },
+  trailingSlash: 'never',
   plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet",
   {
     resolve: "gatsby-plugin-google-tagmanager",

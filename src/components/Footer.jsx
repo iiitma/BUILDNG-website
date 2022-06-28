@@ -77,23 +77,24 @@ const Footer = () => {
               <div className="flex gap-4 text-lg">
                 {socials.map((s) => {
                   return (
-                    <Link
+                    <a
                       target="_blank"
-                      key={s.anme}
-                      to={s.iconUrl}
+                      key={s.name}
+                      href={s.iconUrl}
                       className="text-white"
                     >
+                      <span className="hidden">{s.name}</span>
                       <s.icon size={32} />
-                    </Link>
+                    </a>
                   );
                 })}
               </div>
             </div>
           </div>
           <div className="">
-            <hi className="font-bold text-md font-serif tracking-wide">
+            <h1 className="font-bold text-md font-serif tracking-wide">
               Organisation
-            </hi>
+            </h1>
             <ul className="">
               {links1.map((link, i) => {
                 return (
@@ -119,9 +120,9 @@ const Footer = () => {
           </div>
 
           <div className="">
-            <hi className="font-bold text-md font-serif tracking-wide">
+            <h1 className="font-bold text-md font-serif tracking-wide">
               Our Programs
-            </hi>
+            </h1>
             <ul className="">
               {links2.map((link, i) => {
                 return (
@@ -144,9 +145,9 @@ const Footer = () => {
           </div>
 
           <div className="">
-            <hi className="font-bold text-md font-serif tracking-wide">
+            <h1 className="font-bold text-md font-serif tracking-wide">
               Resources
-            </hi>
+            </h1>
             <ul className="">
               {links3.map((link, i) => {
                 return (

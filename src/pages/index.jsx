@@ -9,8 +9,9 @@ import { FaUsers, FaConnectdevelop } from "react-icons/fa";
 import { Navigation, Pagination, Scrollbar, Autoplay, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Connector from "../assets/svgs/connector.webp";
-import HeroImage from "../assets/png/hero-image.png";
+import HeroImage from "../assets/webp/hero-image.webp";
 import { Link } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
   return (
@@ -28,15 +29,15 @@ const Hero = () => {
             colleges.
           </p>
           <div className="flex justify-center lg:justify-start">
-          <Link to="/about-us" >
-          <button alt="Learn More" className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
-            <span>Learn More</span> <HiOutlineChevronRight size="20" />
+          <Link to="/about-us" aria-label="Learn More about BUILD Nigeria" >
+          <button aria-label="Learn More about BUILD Nigeria" className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
+            <span>Learn More about BUILD Nigeria</span> <HiOutlineChevronRight size="20" />
           </button>
           </Link>
           </div>
         </div>
         <div className="w-full max-w-2xl">
-          <img src={HeroImage} alt="Creating social change through education for Nigerians." className="object-fit w-full" />
+        <StaticImage src="../assets/webp/hero-image.webp" className="object-fit w-100" width="720"  alt="Creating social change through education for Nigerians." />
         </div>
       </div>
     </section>
@@ -98,27 +99,27 @@ const PartnersSection = () => {
     {
       name: "Junior Achievement Nigeria",
       link: "https://ja-nigeria.org/",
-      url: "https://res.cloudinary.com/iiitma/image/upload/v1630275800/JAN_2e9e4f394d.png",
+      url: "https://res.cloudinary.com/iiitma/image/upload/f_auto/v1630275800/JAN_2e9e4f394d.webp",
     },
     {
       name: "Stem in Africa",
-      link: null,
-      url: "https://res.cloudinary.com/iiitma/image/upload/v1630275800/SIA_6917b65ed0.jpg",
+      link: 'https://www.steminafrica.com/',
+      url: "https://res.cloudinary.com/iiitma/image/upload/f_auto/v1630275800/SIA_6917b65ed0.jpg",
     },
     {
       name: "United For Kids Foundation",
       link: "http://unitedforkidsfoundation.org/",
-      url: "https://res.cloudinary.com/iiitma/image/upload/v1630275800/UKF_fee0e8dc21.png",
+      url: "https://res.cloudinary.com/iiitma/image/upload/f_auto/v1630275800/UKF_fee0e8dc21.webp",
     },
     {
       name: "KENSAP",
       link: "https://www.kensap.org/",
-      url: "https://res.cloudinary.com/iiitma/image/upload/v1630282247/KENSAP_27fb4b465c.png",
+      url: "https://res.cloudinary.com/iiitma/image/upload/f_auto/v1630282247/KENSAP_27fb4b465c.webp",
     },
     {
       name: "Junior Achievement Africa",
       link: "https://ja-africa.org/",
-      url: "https://res.cloudinary.com/iiitma/image/upload/v1630275800/JAA_21924124e4.png",
+      url: "https://res.cloudinary.com/iiitma/image/upload/f_auto/v1630275800/JAA_21924124e4.webp",
     },
   ];
   return (
@@ -130,7 +131,7 @@ const PartnersSection = () => {
         {partners.map((p, i) => {
           return (
             <a key={i} href={p.link} className="grayscale m-2">
-              <img src={p.url} alt={p.name} className="h-10" />
+              <img  src={p.url} alt={p.name} className="h-10" />
             </a>
           );
         })}
@@ -152,15 +153,18 @@ const Infograph2 = () => {
             access to top colleges for low-income &amp; high-achieving Nigerian
             youth.
           </p>
-          <button alt="Learn More"  className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
-            <span>Learn More</span> <HiOutlineChevronRight size="20" />
-          </button>
+          <div className="flex">
+          <Link to="/about-us" aria-label="Learn More about BUILD Nigeria"  className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
+            <span>Learn More about BUILD Nigeria</span> <HiOutlineChevronRight size="20" />
+          </Link>
+          </div>
         </div>
         <div className="lg:w-1/2 w-full max-w-md order-first lg:order-last">
           <img
-            src="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+            src="https://images.unsplash.com/photo-1529390079861-591de354faf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80"
             alt="BUILD Nigeria - Who we are"
             className="object-center object-cover w-100 rounded-xl aspect-1"
+            width="640" height="360"
           />
         </div>
       </div>
@@ -173,8 +177,9 @@ const Infograph3 = () => {
     <section className="mx-auto">
       <div className="flex justify-center items-center flex-col lg:justify-between  lg:flex-row sm:px-10 gap-6">
         <div className="lg:w-1/2 w-full max-w-md">
-          <img
-            src="https://images.unsplash.com/photo-1473649085228-583485e6e4d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3264&q=80"
+          <img 
+            src="https://images.unsplash.com/photo-1473649085228-583485e6e4d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80"
+            width="640" height="360"
             alt="BUILD Nigeria - Who we are"
             className="object-center object-cover w-100 rounded-xl aspect-1"
           />
@@ -193,9 +198,11 @@ const Infograph3 = () => {
             continues to persist as the status quo of the Nigerian education
             landscape.
           </p>
-          <button alt="Learn More" className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
-            <span>Learn More</span> <HiOutlineChevronRight size="20" />
-          </button>
+          <div className="flex">
+          <Link to="/about-us" aria-label="Learn More about BUILD Nigeria"  className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
+            <span>Learn More about BUILD Nigeria</span> <HiOutlineChevronRight size="20" />
+          </Link>
+          </div>
         </div>
       </div>
     </section>
@@ -209,32 +216,24 @@ const Infograph4 = () => {
       description:
         "The BUILD Nigeria Cohort Program is a free, hands-on program that works with Nigerian students to provide them with personalized guidance through the process of applying  and securing admission and full financial aid to top colleges, and connecting them with resources to succeed at these colleges.",
       link: "/programs/cohort-program",
-      image:
-        "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
     },
     {
       name: "Think Tank ",
       description:
         "BUILD Nigeria plans to develop and maintain a think tank that seeks to create and encourage conversations surrounding the radical rethinking and reimagining of the Nigerian education landscape.",
       link: "/programs/think-tank",
-      image:
-        "https://images.unsplash.com/photo-1520532622976-1bdf3b7a5af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGhpbmt8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     },
     {
       name: "Resource Bank ",
       description:
         "BUILD Nigeria plans to maintain an accessible, comprehensive and reliable online resource bank that will be available to members of the general public",
       link: "/programs/resource-bank",
-      image:
-        "https://images.unsplash.com/photo-1568667256549-094345857637?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1015&q=80",
     },
     {
       name: "Mentorship & Junior Prep Program ",
       description:
         "BUILD Nigeria plans to develop an extensive mentor-mentee network that connects Nigerian students with other Nigerian studying the colleges they hope to attend, succeeding in the field they have interest in, and so on",
       link: "/programs/mentorship-prep-program",
-      image:
-        "https://images.unsplash.com/photo-1639432034590-5d08beaf7261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
     },
   ];
   return (
@@ -287,9 +286,9 @@ const Infograph4 = () => {
           </div>
 
           <div className="flex justify-center mt-8">
-            <Link to="/programs">
-            <button alt="Learn More"  className="btn bg-white btn-lg text-deep mx-auto lg:mx-0">
-            <span>Learn More</span> <HiOutlineChevronRight size="20" />
+            <Link to="/programs"  aria-label="Learn More about our programs">
+            <button aria-label="Learn More about our programs"  className="btn bg-white btn-lg text-deep mx-auto lg:mx-0">
+            <span>Learn More about our programs</span> <HiOutlineChevronRight size="20" />
           </button>
             </Link>
           </div>
@@ -310,9 +309,8 @@ export default function Home({ location }) {
       <Infograph2 />
       <Infograph3 />
       <section className="mx-auto -mt-16 hidden lg:block">
-        <img src={Connector} className="w-100" alt="" />
+        <StaticImage width="640" height="360" src="../assets/svgs/connector.webp" className="w-100" alt="Connecting Line" />
       </section>
-
       <Infograph4 />
       <ContactCard />
     </Layout>
