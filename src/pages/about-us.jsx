@@ -28,7 +28,7 @@ const Hero = () => {
             world-class colleges and universities, including but not exclusive
             to US colleges.
           </p>
-          <Link to="/donate-now">
+          <Link to="/donate">
           <button alt="Donate Now" className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
             <span>Donate Now</span> <HiOutlineChevronRight size="20" />
           </button>
