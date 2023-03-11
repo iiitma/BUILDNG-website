@@ -26,7 +26,7 @@ const Hero = () => {
 
 export default function NotFoundPage({location}) {
   return (
-   <Layout location={location} title="Page Not Found - BUILD Nigeria">
+    <Layout location={location} title="Page Not Found">
     <Hero/>
    </Layout>
   )

@@ -13,7 +13,9 @@ export default function Navbar({ location }) {
     { label: "About Us", to: "/about-us" },
     { label: "Our Story", to: "/our-story" },
     { label: "Our Programs", to: "/programs" },
-    { label: "Blog", to: "/coming-soon" },
+    { label: "The Team", to: "/about-us#founding-team" },
+    { label: "Press", to: "/press" },
+    { label: "Contact Us", to: "/contact-us" },
   ];
 
   return (
@@ -40,14 +42,19 @@ export default function Navbar({ location }) {
 
         <nav className="leading-6 font-bold hidden md:block">
           <ul className="flex gap-4 items-center">
-            <li className={`text-primary bg-secondary nav-btn`}>
+            {/* <li className={`text-primary bg-secondary nav-btn`}>
               <Link to={"/contact-us"}>Contact Us</Link>
-            </li>
+            </li> */}
             <li>
-              <Link to="/donate" className="bg-primary nav-btn text-white">
-                <HiOutlineHeart />
+              <Link to="/donate" className="bg-secondary nav-btn text-primary">
+                <HiOutlineHeart size={20} />
                 <span>Donate</span>
               </Link>
+            </li>
+            <li>
+              <a href="https://forms.gle/pDGiSNKVnPuPEXkg6" target='_blank' className="bg-black nav-btn text-white">
+                <span>Apply Now</span>
+              </a>
             </li>
           </ul>
         </nav>

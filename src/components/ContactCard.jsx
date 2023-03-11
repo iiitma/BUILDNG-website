@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 export const ContactCard = () => {
     return (
       <section className="mx-auto max-w-none bg-secondary/50 py-20 mb-0">
-        <div className="bg-white rounded-xl flex p-10 max-w-5xl mx-auto justify-center items-center flex-col md:justify-between  md:flex-row gap-6">
+        <div className="bg-white rounded-xl flex p-10 max-w-[1280px] mx-auto justify-center items-center flex-col md:justify-between  md:flex-row gap-6">
           <div className="md:w-1/2 max-w-lg">
             <h1 className="font-serif font-bold text-4xl mb-3">
               Do you have a question?
@@ -30,7 +30,7 @@ export const ContactCard = () => {
             </Link>
           </div>
           <div className="md:w-1/2 max-w-lg">
-            <StaticImage src="../assets/svgs/contact-us.svg" alt="Contact Us Illustration"  width="640" />
+            <StaticImage src="../assets/svgs/contact-us.svg" alt="Contact Us Illustration" />
           </div>
         </div>
       </section>

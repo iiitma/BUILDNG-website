@@ -95,7 +95,7 @@ const Hero = () => {
 
 export default function ContactUs({ location }) {
   return (
-    <Layout location={location} title="Contact Us - BUILD Nigeria">
+    <Layout location={location} title="Contact Us">
       <Hero />
     </Layout>
   );

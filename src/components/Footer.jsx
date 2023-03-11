@@ -35,6 +35,7 @@ const Footer = () => {
       anchor: true,
     },
     { name: "Our Advisors", link: "/about-us#advisory-board", anchor: true },
+    { name: "Press", link: "/press" },
   ];
 
   const links2 = [
@@ -45,11 +46,6 @@ const Footer = () => {
     {
       name: "Summer Research Peer Mentorship (SRPM)",
       link: "/programs/srpm",
-    },
-    {
-      name: "Think Tank ",
-      link: "/programs",
-      soon: true,
     },
     {
       name: "Resource Bank ",
@@ -93,7 +89,7 @@ const Footer = () => {
           </div>
           <div className="">
             <h1 className="font-bold text-md font-serif tracking-wide">
-              Organisation
+              Organization
             </h1>
             <ul className="">
               {links1.map((link, i) => {

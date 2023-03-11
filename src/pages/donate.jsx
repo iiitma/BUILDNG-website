@@ -53,7 +53,7 @@ const Hero = () => {
 
 export default function Donate({ location }) {
   return (
-    <Layout location={location} title="Donate - BUILD Nigeria" description="Funds raised will be used to cover the SAT registration costs, TOEFL
+    <Layout location={location} title="Donate" description="Funds raised will be used to cover the SAT registration costs, TOEFL
     registration costs, college application fees, transportation costs,
     tablet/laptop purchasing costs, student visa costs, and so on, for
     members of our cohort who would otherwise be unable to cover these
