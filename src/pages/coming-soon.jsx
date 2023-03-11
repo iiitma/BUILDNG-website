@@ -26,7 +26,7 @@ const Hero = () => {
 
 export default function ComingSoon({location}) {
   return (
-   <Layout location={location} title="Coming Soon - BUILD Nigeria" description="Something really cool is coming!">
+    <Layout location={location} title="Coming Soon" description="Something really cool is coming!">
     <Hero/>
    </Layout>
   )

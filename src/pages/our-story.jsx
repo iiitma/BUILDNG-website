@@ -21,7 +21,7 @@ const Chat = () => {
     <section className="mx-auto">
       <div className="flex justify-center items-center flex-col lg:justify-between  lg:flex-row sm:px-10 gap-6">
         <div className="max-w-3xl prose tracking-wide leading-6 mx-auto text-justify">
-          <p className="">Dear Firends,</p>
+          <p className="">Dear Friends,</p>
           <p className="">
             Thank you so much for your interest in BUILD Nigeria! We are so
             happy to get to introduce BUILD Nigeria to you and tell you more
@@ -106,7 +106,7 @@ const Chat = () => {
 
 export default function OurStory({ location }) {
   return (
-    <Layout location={location} title="Our Story - BUILD Nigeria" description="A Letter from our Founders">
+    <Layout location={location} title="Our Story" description="A Letter from our Founders">
       <Hero />
       <Chat />
       <ContactCard />
