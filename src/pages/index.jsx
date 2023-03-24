@@ -14,6 +14,7 @@ import { Link } from 'gatsby';
 import { StaticImage } from "gatsby-plugin-image"
 
 import Rise from "../assets/png/Rise-Logo.png"
+import HAN from "../assets/png/HAN.png"
 
 const Hero = () => {
   return (
@@ -128,6 +129,11 @@ const PartnersSection = () => {
       link: "https://www.risefortheworld.org/",
       url: Rise,
     },
+    {
+      name: "Hali Access Network",
+      link: "https://www.haliaccess.org/",
+      url: HAN,
+    },
   ];
   return (
     <section className="mx-auto">
@@ -211,12 +217,6 @@ const Infograph4 = () => {
       description:
         "The BUILD Nigeria Cohort Program is a free, hands-on program that works with Nigerian students to provide them with personalized guidance through the process of applying  and securing admission and full financial aid to top colleges, and connecting them with resources to succeed at these colleges.",
       link: "/programs/cohort-program",
-    },
-    {
-      name: "Think Tank ",
-      description:
-        "BUILD Nigeria plans to develop and maintain a think tank that seeks to create and encourage conversations surrounding the radical rethinking and reimagining of the Nigerian education landscape.",
-      link: "/programs/think-tank",
     },
     {
       name: "Resource Bank ",
