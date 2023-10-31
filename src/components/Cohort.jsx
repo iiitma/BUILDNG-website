@@ -1,5 +1,6 @@
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import React from 'react'
+import { Link } from "gatsby";
 import { HiOutlinePlusCircle } from 'react-icons/hi';
 import { StaticImage } from "gatsby-plugin-image"
 export default function Cohort() {
@@ -18,11 +19,11 @@ export default function Cohort() {
                 them with resources to succeed at these colleges.
               </p>
               <div className="flex gap-4">
-              {/* <Link to="/contact-us">
-                <button aria-label="Apply Now" className="btn bg-primary btn-lg text-white">
+              {/* <a href="https://forms.gle/pDGiSNKVnPuPEXkg6" target='_blank'>
+                <button aria-label="Apply Now" className="btn bg-black btn-lg text-white">
                   <span>Apply Now</span>
                 </button>
-              </Link> */}
+              </a> */}
               <AnchorLink to="/programs/cohort#requirements" stripHash>
                 <button aria-label="See Requirements" className="btn btn-lg text-primary px-0">
                   <HiOutlinePlusCircle size={20}/>
@@ -32,7 +33,7 @@ export default function Cohort() {
               </div>
             </div>
             <div className="md:w-1/2 max-w-xl">
-              <StaticImage src="../assets/webp/cohort.webp" width="720" alt="" />
+            <StaticImage src="../assets/webp/cohort.webp" alt="" />
             </div>
           </div>
         </section>

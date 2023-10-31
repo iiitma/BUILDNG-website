@@ -13,7 +13,9 @@ export default function Navbar({ location }) {
     { label: "About Us", to: "/about-us" },
     { label: "Our Story", to: "/our-story" },
     { label: "Our Programs", to: "/programs" },
-    { label: "Blog", to: "/coming-soon" },
+    // { label: "The Team", to: "/about-us#founding-team" },
+    { label: "Press", to: "/press" },
+    { label: "Contact Us", to: "/contact-us" },
   ];
 
   return (
@@ -40,13 +42,18 @@ export default function Navbar({ location }) {
 
         <nav className="leading-6 font-bold hidden md:block">
           <ul className="flex gap-4 items-center">
-            <li className={`text-primary bg-secondary nav-btn`}>
+            {/* <li className={`text-primary bg-secondary nav-btn`}>
               <Link to={"/contact-us"}>Contact Us</Link>
+            </li> */}
+            <li>
+              <Link to="/donate" className="bg-secondary nav-btn text-primary">
+                <HiOutlineHeart size={20} />
+                <span>Donate</span>
+              </Link>
             </li>
             <li>
-              <Link to="/donate" className="bg-primary nav-btn text-white">
-                <HiOutlineHeart />
-                <span>Donate</span>
+              <Link to="/join-our-team" className="bg-black nav-btn text-white">
+                <span>Join Our Team</span>
               </Link>
             </li>
           </ul>
@@ -95,9 +102,9 @@ export default function Navbar({ location }) {
                     <div className="bg-gray-50 p-7">
                       <nav className="leading-6 font-bold  transition duration-150 ease-in-out">
                         <ul className="flex gap-4 items-center">
-                          <li className={`text-primary bg-secondary nav-btn`}>
+                          {/* <li className={`text-primary bg-secondary nav-btn`}>
                             <Link to={"/contact-us"}>Contact Us</Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link
                               to="/donate"
@@ -105,6 +112,11 @@ export default function Navbar({ location }) {
                             >
                               <HiOutlineHeart />
                               <span>Donate</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/join-our-team" className="bg-black nav-btn text-white">
+                              <span>Join Our Team</span>
                             </Link>
                           </li>
                         </ul>

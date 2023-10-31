@@ -13,6 +13,9 @@ import HeroImage from "../assets/webp/hero-image.webp";
 import { Link } from 'gatsby';
 import { StaticImage } from "gatsby-plugin-image"
 
+import Rise from "../assets/png/Rise-Logo.png"
+import HAN from "../assets/png/HAN.png"
+
 const Hero = () => {
   return (
     <section id="hero" className="mx-auto  bg-world-svg bg-cover bg-no-repeat bg-center max-w-none flex items-center justify-center">
@@ -37,7 +40,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full max-w-2xl">
-        <StaticImage src="../assets/webp/hero-image.webp" className="object-fit w-100" width="720"  alt="Creating social change through education for Nigerians." />
+          <StaticImage src="../assets/webp/hero-image.webp" className="object-fit w-100" width={720} alt="Creating social change through education for Nigerians." />
         </div>
       </div>
     </section>
@@ -121,6 +124,16 @@ const PartnersSection = () => {
       link: "https://ja-africa.org/",
       url: "https://res.cloudinary.com/iiitma/image/upload/f_auto/v1630275800/JAA_21924124e4.webp",
     },
+    {
+      name: "Rise",
+      link: "https://www.risefortheworld.org/",
+      url: Rise,
+    },
+    {
+      name: "Hali Access Network",
+      link: "https://www.haliaccess.org/",
+      url: HAN,
+    },
   ];
   return (
     <section className="mx-auto">
@@ -149,9 +162,7 @@ const Infograph2 = () => {
             We are <b className="text-primary">A NON PROFIT</b>
           </h1>
           <p className=" mb-8 tracking-wide max-w-xl text-justify">
-            BUILD Nigeria is a youth-led non-profit that aims to democratize
-            access to top colleges for low-income &amp; high-achieving Nigerian
-            youth.
+            BUILD Nigeria is a youth-led non-profit that aims to democratize access to world-class colleges for high achieving, low income and first generation Nigerian youth. 
           </p>
           <div className="flex">
           <Link to="/about-us" aria-label="Learn More about BUILD Nigeria"  className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
@@ -185,24 +196,14 @@ const Infograph3 = () => {
           />
         </div>
         <div className="lg:w-1/2 text-center lg:text-left max-w-lg">
-          <h1 className="font-serif text-2xl sm:text-5xl mb-4 font-semibold">
-            What exactly are we doing to help?
-          </h1>
           <p className=" mb-8 tracking-wide text-justify">
-            BUILD Nigeria seeks to remove Nigerian students from the broken
-            educational system and provide them with opportunities to access
-            world-class institutions. We also seek to position ourselves as
-            leaders in creating meaningful conversations that seek to encourage
-            the radical rethinking and reimaging of the Nigerian education
-            landscape, allowing members of the public to break free from what
-            continues to persist as the status quo of the Nigerian education
-            landscape.
+            For high achieving, first generation and low income Nigerian youth, we provide a year of free college counseling, college application support and college preparedness programming with the aim of enabling them to receive college acceptances and full financial aid to world-class colleges. BUILD Nigeria aims to become the leading community of globally educated, highly skilled and well-connected young Nigerians who are passionate about making change in their community, country and the world at large. 
           </p>
-          <div className="flex">
+          {/* <div className="flex">
           <Link to="/about-us" aria-label="Learn More about BUILD Nigeria"  className="btn bg-primary btn-lg text-white mx-auto lg:mx-0">
             <span>Learn More about BUILD Nigeria</span> <HiOutlineChevronRight size="20" />
           </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
@@ -216,12 +217,6 @@ const Infograph4 = () => {
       description:
         "The BUILD Nigeria Cohort Program is a free, hands-on program that works with Nigerian students to provide them with personalized guidance through the process of applying  and securing admission and full financial aid to top colleges, and connecting them with resources to succeed at these colleges.",
       link: "/programs/cohort-program",
-    },
-    {
-      name: "Think Tank ",
-      description:
-        "BUILD Nigeria plans to develop and maintain a think tank that seeks to create and encourage conversations surrounding the radical rethinking and reimagining of the Nigerian education landscape.",
-      link: "/programs/think-tank",
     },
     {
       name: "Resource Bank ",
@@ -302,14 +297,14 @@ const Infograph4 = () => {
 
 export default function Home({ location }) {
   return (
-    <Layout location={location} title={'Creating social change through education for Nigerians - BUILD NIgeria'}>
+    <Layout location={location} title={'Creating social change through education for Nigerians'}>
       <Hero />
       <PartnersSection />
       <Infograph1 />
       <Infograph2 />
       <Infograph3 />
       <section className="mx-auto -mt-16 hidden lg:block">
-        <StaticImage width="640" height="360" src="../assets/svgs/connector.webp" className="w-100" alt="Connecting Line" />
+        <StaticImage width={640} height={360} src="../assets/svgs/connector.webp" className="w-100" alt="Connecting Line" />
       </section>
       <Infograph4 />
       <ContactCard />

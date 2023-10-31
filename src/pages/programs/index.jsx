@@ -28,22 +28,7 @@ const Others = () => {
         </div>
       </div>
       <div className="md:w-1/2 max-w-lg">
-        <StaticImage src="../../assets/webp/srpm.webp" width="325.5" height="325.5" alt="" />
-      </div>
-    </div>
-
-
-    <div className="bg-white rounded-xl flex p-10 justify-center items-center flex-col md:justify-between  md:flex-row gap-6 col-span-1">
-      <div className="max-w-lg">
-        <h1 className="font-serif font-bold text-4xl mb-3">
-        Think Tank
-        </h1>
-        <p className="mb-6">
-        BUILD Nigeria plans to develop and maintain a think tank that seeks to create and encourage conversations surrounding the radical rethinking and reimagining of the Nigerian education landscape.
-        </p>
-          <button aria-label="Coming Soon" className="btn bg-secondary text-primary rounded-full">
-          <HiOutlineClock size="20" /> <span>Coming Soon</span>
-          </button>
+            <StaticImage src="../../assets/webp/srpm.webp" width={325.5} height={325.5} alt="" />
       </div>
     </div>
 
@@ -89,7 +74,7 @@ const Others = () => {
 
 export default function Programs({ location }) {
   return (
-    <Layout location={location} title="Our Programs - BUILD Nigeria">
+    <Layout location={location} title="Our Programs">
       <Cohort />
       <Others/>
       <ContactCard />

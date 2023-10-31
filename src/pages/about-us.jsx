@@ -51,18 +51,10 @@ const OurVision = () => {
     <section className="mx-auto">
       <div className="justify-center items-center sm:px-10 mb-8">
         <h1 className="font-serif text-2xl sm:text-4xl mb-4 font-semibold tracking-wide">
-          With over 46 million pre-college aged students nationwide and an
-          increasingly youthful population,
+          With over 46 million pre-college aged students nationwide and an increasingly youthful population, 
         </h1>
         <p className="prose max-w-full">
-          Nigeria's current education system does not provide its students with
-          adequate opportunities to study at world-class colleges and
-          universities that can enable them acquire necessary skills, and
-          achieve their aspirations. Through the cohort program, online resource
-          bank and education-centered think tank, BUILD Nigeria aims to directly
-          invest in Nigerian youth and their aspirations with the ultimate goal
-          of creating broader social change. BUILD Nigeria exists so that it one
-          day no longer needs to.
+          Nigeria's current education system does not provide its students with adequate opportunities to study at world-class colleges and universities that can enable them acquire necessary skills and achieve the full extent of their aspirations. Through our flagship cohort program, BUILD Nigeria aims to directly invest in Nigerian youth and their aspirations with the ultimate goal of creating broader social change. 
         </p>
       </div>
     </section>
@@ -87,16 +79,7 @@ const OurPurpose = () => {
               The Problem
             </h2>
             <p className="prose text-sm leading-7">
-              The substandard Nigerian education system continues to contribute
-              to Nigeria’s weakened institutions and poor leadership capacity
-              which are two of the most salient obstacles to progress. We
-              recognize that the Nigerian education system is in dire need of
-              reform. From promoting cramming over critical thinking and
-              engagement, to the lack of passion and desire for
-              education-related innovation within and outside the classroom,
-              Nigerian students often graduate secondary school under-equipped
-              with the skills that they will need to be engaged, critical
-              thinkers and leaders.
+              There is currently no organization in Nigeria that serves primarily students who are low income and first generation (first in their family to attend university) throughout their journey to apply to university. Our research shows that there are so many brilliant students who lack the resources and support they need to successfully apply to and receive admissions and financial aid to world-class colleges. 
             </p>
           </div>
           <div className="rounded-md bg-secondary/20 border border-slate-300 p-4 md:p-8 min-w-[320px] snap-center">
@@ -107,14 +90,7 @@ const OurPurpose = () => {
               Our Solution
             </h2>
             <p className="prose text-sm leading-7">
-              BUILD Nigeria seeks to remove Nigerian students from the broken
-              educational system and provide them with opportunities to access
-              world-class institutions. We also seek to position ourselves as
-              leaders in creating meaningful conversations that seek to
-              encourage the radical rethinking and reimaging of the Nigerian
-              education landscape, allowing members of the public to break free
-              from what continues to persist as the status quo of the Nigerian
-              education landscape.
+              The BUILD Nigeria Cohort Program is designed specifically for high achieving, low income and first generation Nigerian students. We provide our students with a year of free college counseling, college application support, and college preparedness programming. We also completely fund our students’ journey to college, from application fees to student visa costs, we are there every step of the way.  
             </p>
           </div>
           <div className="rounded-md bg-secondary/20 border border-slate-300 p-4 md:p-8 min-w-[320px] snap-center">
@@ -125,14 +101,7 @@ const OurPurpose = () => {
               The Outcome
             </h2>
             <p className="prose text-sm leading-7">
-              BUILD Nigeria seeks to directly invest in Nigerian youth, and
-              inspire, support and cultivate the future leaders of Nigeria so
-              that they may be equipped with skills needed to be engaged
-              critical thinkers and future leaders of Nigeria. It is our hope
-              that one day BUILD Nigeria will no longer need to exist because
-              Nigeria itself will be home to world-class educational
-              institutions available to every single Nigerian student and
-              capable of creating the leaders that we know we deserve.
+              Our vision is to become the leading community of globally educated, highly skilled and well-connected young Nigerians. By providing opportunities for our alumni to make positive change in Nigeria, we aim to leverage the BUILD Nigeria community to create social change in Nigeria. 
             </p>
           </div>
         </div>
@@ -191,7 +160,7 @@ const OurValues = () => {
 
 export default function AboutUs({ location }) {
   return (
-    <Layout location={location} title="About Us - BUILD Nigeria" description="BUILD Nigeria is a non-profit NGO that is dedicated to bridging the
+    <Layout location={location} title="About Us" description="BUILD Nigeria is a non-profit NGO that is dedicated to bridging the
     college access gap in Nigeria by operating a cohort program which
     provides low-income students with access to credible and
     comprehensive resources and personalized guidance through the
