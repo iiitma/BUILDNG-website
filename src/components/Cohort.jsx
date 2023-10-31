@@ -19,11 +19,11 @@ export default function Cohort() {
                 them with resources to succeed at these colleges.
               </p>
               <div className="flex gap-4">
-              <a href="https://forms.gle/pDGiSNKVnPuPEXkg6" target='_blank'>
+              {/* <a href="https://forms.gle/pDGiSNKVnPuPEXkg6" target='_blank'>
                 <button aria-label="Apply Now" className="btn bg-black btn-lg text-white">
                   <span>Apply Now</span>
                 </button>
-              </a>
+              </a> */}
               <AnchorLink to="/programs/cohort#requirements" stripHash>
                 <button aria-label="See Requirements" className="btn btn-lg text-primary px-0">
                   <HiOutlinePlusCircle size={20}/>

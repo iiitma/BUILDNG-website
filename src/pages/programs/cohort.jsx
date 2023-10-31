@@ -44,7 +44,7 @@ const Requirements = () => {
 
 
           </ul>
-          <p className="font-bold mt-3 text-md">Application deadline: April 1st, 2023</p>
+          <p className="font-bold mt-3 text-md">Not currently receiving applications.</p>
           <a href="https://drive.google.com/uc?export=view&id=1ZhtJTc1AQ8xgHSpt0RMv0b1-j8jiz38D" target="_blank" download="BUILD NG Cohort Prospectus_2023.pdf" className="btn btn-lg bg-primary text-white w-fit gap-2 mt-8">
             Learn More
           </a>

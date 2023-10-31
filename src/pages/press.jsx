@@ -6,6 +6,12 @@ export default function Press({ location }) {
 
     const articles = [
         {
+            title: 'From Nigeria to England: Ikenna Nwafor’s journey to global impact',
+            publisher: "Business Day",
+            icon: "https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/qqmebgbfain1ujvbesqd",
+            link: "https://businessday.ng/bd-weekender/entrepreneurship/article/from-nigeria-to-england-ikenna-nwafors-journey-to-global-impact/?amp=1",
+            excerpts: "In 2022, Ikenna Nwafor was awarded as a winner of the Rise Global Challenge—a program that finds promising young people and provides them with opportunities that allow them to work to serve others over their lifetimes."
+        }, {
             title: 'Change Makers: BUILD Nigeria',
             publisher: "Res Public",
             icon: "https://images.squarespace-cdn.com/content/v1/5feb13ab4b071c26bb0ebad0/f16e5999-6866-4c0e-9295-5603ac51433b/favicon.ico?format=100w",
