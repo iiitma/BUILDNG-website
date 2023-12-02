@@ -23,10 +23,10 @@ const Hero = () => {
 
             <div>
               <h1 className="font-serif text-white text-2xl">
-                Reach out to directly
+                Reach out to us directly.
               </h1>
               <p className="text-sm">
-                Send us an email via info@buildng.org and ring our phone on{" "}
+                Send us an email via contact@buildng.org and ring our phone on{" "}
                 <a href="tel:+1(857) 472-8349" className="text-white font-bold">
                   +1(857) 472-8349
                 </a>{" "}
@@ -35,7 +35,7 @@ const Hero = () => {
 
               <Link
                 target="_blank"
-                to="mailto:info@buildng.org"
+                to="mailto:contact@buildng.org"
                 className="text-white flex gap-2 leading-none font-semibold items-center mt-4 font-serif tracking-wide text-sm"
               >
                 <span>Send us an email</span>

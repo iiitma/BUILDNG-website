@@ -58,6 +58,7 @@ const Footer = () => {
     { name: "Blog", link: "/coming-soon" },
     { name: "Contact Us", link: "/contact-us" },
     { name: "Donate", link: "/donate" },
+    { name: "Newsletter", link: "http://eepurl.com/htYvoX" },
   ];
 
   return (

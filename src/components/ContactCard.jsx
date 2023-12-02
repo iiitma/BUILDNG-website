@@ -15,10 +15,10 @@ export const ContactCard = () => {
             <p className="mb-6">
               Send us a message at{" "}
               <a
-                href="mailto:info@buildng.org"
+                href="mailto:contact@buildng.org"
                 className="text-alt font-semibold"
               >
-                info@buildng.org
+                contact@buildng.org
               </a>{" "}
               to get assistance with all your enquiries. Our support team is
               always available to answer your questions.
