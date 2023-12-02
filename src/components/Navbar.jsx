@@ -46,9 +46,9 @@ export default function Navbar({ location }) {
               <Link to={"/contact-us"}>Contact Us</Link>
             </li> */}
             <li>
-              <Link to="/donate" className="bg-secondary nav-btn text-primary">
-                <HiOutlineHeart size={20} />
-                <span>Donate</span>
+              <Link to="/how-to-help" className="bg-secondary nav-btn text-primary">
+                {/* <HiOutlineHeart size={20} /> */}
+                <span>How to help</span>
               </Link>
             </li>
             <li>
@@ -107,11 +107,10 @@ export default function Navbar({ location }) {
                           </li> */}
                           <li>
                             <Link
-                              to="/donate"
+                              to="/how-to-help"
                               className="bg-primary nav-btn text-white"
                             >
-                              <HiOutlineHeart />
-                              <span>Donate</span>
+                              <span>How to help</span>
                             </Link>
                           </li>
                           <li>
