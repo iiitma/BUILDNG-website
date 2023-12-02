@@ -94,7 +94,7 @@ export default function JoinOurTeam({ location }) {
                   <Popover.Panel className="absolute z-10 mt-3 w-screen max-w-sm transform px-4 sm:px-0 lg:max-w-3xl">
                     <div className="bg-white p-4 rounded-2xl">
                       <p className="leading-2">
-                        Interested candidates should email a CV and cover letter to <a className="text-primary" href="mailto:info@buildng.org">info@buildng.org</a> by November 30th 2023 at 11:59PM WAT with the subject line “Associate Director Application: [LastName, FirstName]”. You can click this <Link className="text-primary" to="">link</Link> to see the expanded role description.
+                        Interested candidates should email a CV and cover letter to <a className="text-primary" href="mailto:contact@buildng.org">contact@buildng.org</a> by November 30th 2023 at 11:59PM WAT with the subject line “Associate Director Application: [LastName, FirstName]”. You can click this <Link className="text-primary" to="">link</Link> to see the expanded role description.
                       </p>
                     </div>
                   </Popover.Panel>
