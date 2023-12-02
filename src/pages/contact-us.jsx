@@ -23,7 +23,7 @@ const Hero = () => {
 
             <div>
               <h1 className="font-serif text-white text-2xl">
-                Reach out to directly
+                Reach out to us directly.
               </h1>
               <p className="text-sm">
                 Send us an email via contact@buildng.org and ring our phone on{" "}
