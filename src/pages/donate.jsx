@@ -38,12 +38,12 @@ const Hero = () => {
             <span>Donate through Cash App</span>
           </Link>
           
-          <Link alt="Donate through Zelle: info@buildng.org" to="https://www.zellepay.com/" target="_blank" className="btn md:btn-lg text-white gap-2 md:gap-8 bg-[#6d1fd4] rounded-lg md:rounded-xl">
+          <Link alt="Donate through Zelle: contact@buildng.org" to="https://www.zellepay.com/" target="_blank" className="btn md:btn-lg text-white gap-2 md:gap-8 bg-[#6d1fd4] rounded-lg md:rounded-xl">
             <div className="aspect-1 w-12 rounded-full bg-white bg-opacity-10 flex justify-center items-center">
               <SiZelle className="text-white" size={24} />
             </div>
 
-            <span>Donate through Zelle: info@buildng.org</span>
+            <span>Donate through Zelle: contact@buildng.org</span>
           </Link>
         </div>
       </div>

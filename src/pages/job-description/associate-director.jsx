@@ -192,8 +192,8 @@ const Chat = () => {
                     Interested candidates should email a CV and cover letter to{" "}
                 </span>
                 <span className="c5">
-                    <a className="c10 text-primary" href="mailto:info@buildng.org">
-                        info@buildng.org
+                    <a className="c10 text-primary" href="mailto:contact@buildng.org">
+                        contact@buildng.org
                     </a>
                 </span>
                 <span className="c0">&nbsp;by November </span>
